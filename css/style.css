@@ -164,75 +164,57 @@
   margin-right: auto;
   width: 50%;
 /*--------------- Contact page ------------------*/
-#contact {
-margin:0;
-padding: 0;
-text-align: center;
-background: linear-gradient(rgba(0,0,50,0.5),rgba(0,0,50,0.5));
-background-size: cover;
-background-position: center;
+.contact-container {
+  display: flex;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-.contact-title {
-  padding-top: 3rem;
-  margin-top:50px;
-  text-transform: uppercase;
-  color: #fff;
-  transition: all 4s ease-in-out;
+.image {
+  flex: 1;
+  position: relative;
 }
 
-.contact-title h2 {
- font-size: 4rem;
+.image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: none;
 }
 
+.form-container {
+  flex: 1;
+  padding: 20px;
+}
 
 form {
-  margin-top: 5rem;
-  transition: all 4s ease-in-out;
-  text-align: center;
+  margin: 0 auto;
+  max-width: 800px; 
+}
+.form label {
+  display: block;
+  margin-bottom: 160px;
 }
 
 .form-control {
-  width:400px;
-  background:transparent; 
-  border:none;
+  width: 400%;
+  background: transparent;
+  border: none;
   outline: none;
   border-bottom: 1px solid grey;
-  color:#fff;
+  color: #fff;
+  margin-bottom: 60px;
 }
 
-
 .form-control:hover {
-  width:400px;
-  background:transparent; 
-  border:none;
+  width: 400%; 
+  background: transparent;
+  border: none;
   outline: none;
   border-bottom: 1px solid grey;
-  color:#fff;
+  color: #fff;
 }
 
 input {
-  height:45px;
-}
-
-form .submit {
-  background: blue;
-  border-color: transparent;
-  color: #fff;
-  font-size: 20px;
-  font-weight: bold;
-  letter-spacing: 2px;
-  height: 50px;
-  margin-top: 20px;
-  text-align: center;
-}
-
-form .submit:hover {
-  background: cyan;
-  cursor: pointer;
-}
-
-.contact-form {
-  width: 50%;
-  margin: 0 auto;
+  height: 35px;
 }
