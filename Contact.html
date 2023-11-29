@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="en">
  <head>
  <title>Contact</title>
 <link href="css/style.css" rel="stylesheet">
@@ -17,38 +18,36 @@
                 </ul>
                 </nav>
             </div>
-            <div>
-                <center><h2>Contact Form</h2>
-                
-            </center>
-    <div style="position:relative;">
-<img src="images/undraw_term_sheet_re_ju7s.png"
-   style="position:absolute; top:30px; left:65px; z-index:10; width:440px; height:345px; border:none;"
-   alt="undraw contact"
-   title="Drawing a Contact" />
+            <div class="contact-container">
+      <div class="image">
+        <img src="images/undraw_term_sheet_re_ju7s.png" alt="undraw contact" title="Drawing a Contact" />
+      </div>
 
-            <section id="contact">
-  <div class="contact-form">
-<form action="https://formsubmit.co/virtuhsi1094@gmail.com" method="POST">
-    <form id="contact-form" method="post" action="">
-      <input name="name" type="text" class="form-control" placeholder="Your Name" required>
-      <br>
-      <input name="email" type="email" class="form-control" placeholder="Your Email" required>
-      <br>
-       <input name="phone" type="text" class="form-control" placeholder="Your Phone (Optional)" required>
-      <br>
-       <input name="subject" type="text" class="form-control" placeholder="Subject of Contact" required>
-      <br>
-      <textarea name="message" class="form-control" cols="60" rows="10" placeholder="Message"></textarea>
-      <br>
-      <input type="submit" class="form-control submit" value="SEND MESSAGE">
+      <div class="form-container">
+        <center><h2>Contact Form</h2></center>
+        <section id="contact">
+          <div class="contact-form">
+            <form id="contact-form" action="https://formsubmit.co/virtuhsi1094@gmail.com" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        <br>
+        <button type="submit">Submit</button>
+            </form>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
 
-    </form>
-  </div>
-</section>
-  </div>
- <footer>
+  <footer>
     Made By Chuan Hsieh in September 2023.
-    </footer>
+  </footer>
+        
 </body>
 </html>
