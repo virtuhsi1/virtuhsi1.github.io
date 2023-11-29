@@ -166,35 +166,36 @@
 /*--------------- Contact page ------------------*/
 .contact-container {
   display: flex;
-  max-width: 800px;
-  margin: 0 auto;
-}
-.form-container {
-  flex: 1;
-  padding: 20px;
+  justify-content: center; 
+  align-items: center; 
+  height: 40vh; 
 }
 
-form {
-  margin: 0 auto;
-  max-width: 800px; 
+.form-container {
+  max-width: 1600px; 
+  padding: 40px;
+  text-align: center;
 }
-.form label {
-  display: block;
-  margin-bottom: 160px;
+textarea {
+  height: 200px; 
+}
+form {
+  max-width: 1200%;
 }
 
 .form-control {
   width: 400%;
+  padding: 20px;
+  box-sizing: border-box;
   background: transparent;
   border: none;
   outline: none;
   border-bottom: 1px solid grey;
   color: #fff;
-  margin-bottom: 60px;
+  margin-bottom: 40px; 
 }
 
 .form-control:hover {
-  width: 400%; 
   background: transparent;
   border: none;
   outline: none;
@@ -202,6 +203,17 @@ form {
   color: #fff;
 }
 
+button {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
 input {
   height: 35px;
 }
