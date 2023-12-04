@@ -163,6 +163,14 @@
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+}
+/*--------------- Concept9 page ------------------*/
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 /*--------------- Contact page ------------------*/
 .contact-container {
   display: flex;
