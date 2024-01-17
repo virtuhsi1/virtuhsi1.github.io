@@ -178,6 +178,17 @@
   margin-right: auto;
   width: 50%;
 }
+/*--------------- Concept12 page ------------------*/
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 /*--------------- Contact page ------------------*/
 .contact-container {
   display: flex;
