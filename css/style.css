@@ -1,0 +1,201 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body layout */
+body {
+    display: flex; /* Enable flexbox */
+    flex-direction: column; /* Stack items vertically */
+    min-height: 100vh; /* Full viewport height */
+}
+
+/* Header or side-nav layout */
+.header {
+    display: flex;
+}
+
+/* Side navigation */
+.side-nav {
+    width: 250px;
+    height: 100vh; /* Full viewport height */
+    background: red;
+    position: fixed; /* Fixed to the left */
+    top: 0;
+    left: 0;
+    padding: 20px 30px;
+}
+
+/* Navigation links */
+.navi-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navi-links li {
+    padding: 10px 0;
+}
+
+.navi-links a {
+    color: purple;
+    text-decoration: none;
+    padding: 10px 14px;
+}
+.container img {
+    width: calc(100% - 20px); /* Adjust to fit within the container while maintaining padding */
+    max-width: 300px; /* Limit the maximum width */
+    height: auto; /* Maintain aspect ratio */
+    margin: 10px auto; /* Add some spacing and center the images */
+    display: block; /* Center images within the container */
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping of images to the next row */
+    gap: 15px; /* Add spacing between items */
+    justify-content: center; /* Center the images in the row */
+}
+
+.container {
+    flex: 1 1 calc(25% - 30px); /* Each image takes 25% of the row minus margins */
+    max-width: 300px; /* Ensure containers don’t get too wide */
+    box-sizing: border-box; /* Include padding and border in width/height */
+    text-align: center;
+}
+
+/* Main content */
+main {
+    margin-left: 250px; /* Offset for the side-nav */
+    padding: 20px;
+    background: lightblue; /* Light background for contrast */
+    flex-grow: 1; /* Take up remaining space between header and footer */
+    min-height: calc(100vh - 60px); /* Ensure height fills the viewport minus the footer */
+    overflow: auto; /* Handle overflow if the content is large */
+}
+
+/* Footer */
+footer {
+    background: blue;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto; /* Push the footer to the bottom */
+}
+  /*--------------- Contact page ------------------*/
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Make inputs take the full width of the container */
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+    border-radius: 20px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    max-width: 600px; /* Limit the form's width */
+    margin: 0 auto; /* Center the container horizontally */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better aesthetics */
+  }
+/*--------------- Concept1 page ------------------*/ 
+.center { 
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 78%; 
+    }
+/*--------------- Concept2 page ------------------*/ 
+.center{ 
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 78%; 
+    }
+/*--------------- Concept2 page ------------------*/ 
+.center{ 
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 78%; 
+} 
+/*--------------- Concept3 page ------------------*/ 
+.center{ 
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 78%; 
+} 
+/*--------------- Concept7 page ------------------*/ 
+.center{ 
+    display: block; 
+    margin-left: 300px; 
+    margin-right: auto; 
+    width: 78%; 
+} 
+.Content{
+    display: block; 
+    margin-left: 300px; 
+    margin-right: auto; 
+    width: 78%;
+}
+/*--------------- Concept12 page ------------------*/ 
+.center {
+    margin-left: 270px; /* Same as the side-nav width */
+    margin-right: auto;
+    width: calc(100% - 270px);
+}
+
+.content {
+    margin-left: 250px; /* Same as .side-nav width */
+    padding: 20px; /* Optional: Adds spacing around content */
+    background: #f9f9f9; /* Optional: Different background for contrast */
+    min-height: calc(100vh - 60px); /* Adjust for viewport height */
+    overflow: hidden; /* Prevent content overflow */
+}
+
+.side-nav {
+    z-index: 10; /* Ensures side-nav stays on top */
+}
+.hcg-slide-container {
+    max-width: 50%;
+    margin: auto;
+    margin-left: 100px; /* Adjust this value to shift the slider to the right */
+    overflow: hidden;
+}
+
+.hcg-slides img {
+    width: 80%; /* Keep the images responsive */
+    height: auto;
+    max-height: 400px; /* Limit height to prevent layout issues */
+}
+
+.hcg-slider {
+    margin-top: 20px; /* Add spacing above the slider */
+}
+
